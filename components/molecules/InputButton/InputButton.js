@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './InputButton.css'
+import styles from './InputButton.module.css'
 import { Button } from '../../atoms/Button/Button'
 
 const InputButton = () => {
