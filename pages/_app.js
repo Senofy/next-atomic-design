@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { Fragment, useState, useEffect } from 'react';
 import useDarkMode from 'use-dark-mode'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyle, lightTheme, darkTheme } from '../globalStyles'
@@ -14,13 +14,13 @@ const App = ({ Component, pageProps }) => {
     }, [])
     
     return (
-        <React.Fragment>
+        <Fragment>
             <GlobalStyle />
             <ThemeProvider theme = {theme}>
                 {isMounted && <Component {...pageProps} />}
             </ThemeProvider>
-        </React.Fragment>
-    )
+        </Fragment>
+    );
 }
 
 export default wrapper.withRedux(App)
