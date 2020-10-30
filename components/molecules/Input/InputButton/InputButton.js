@@ -1,5 +1,5 @@
 import styles from './InputButton.module.css'
-import { Button } from '../../atoms/Button/Button'
+import { Button } from '~/components/atoms/Button/Button'
 
 const InputButton = () => {
 	return (

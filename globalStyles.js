@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-export const GlobalStyle = createGlobalStyle`
+export default createGlobalStyle`
 	body {
 		margin: 0;
 		padding: 0;
@@ -13,26 +13,13 @@ export const GlobalStyle = createGlobalStyle`
 		border: none;
 		padding: 0;
 		font: inherit;
-		cursor: pointer;
 		outline: inherit;
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;
 		box-shadow: none;
 	}
+
+	a, button {
+		cursor: pointer;
+	}
 `
-
-export const lightTheme = {
-	colors: {
-		green: {
-			100: '#E6F0D5'
-		}
-	}
-}
-
-export const darkTheme = {
-	colors: {
-		green: {
-			100: 'black'
-		}
-	}
-}
