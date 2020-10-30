@@ -30,7 +30,7 @@ This template has these capabilities:
     ```jsx
     import { Fragment, cloneElement } from 'react'
     import styles from './NavItem.module.css'
-    import { P } from '../../atoms/Text/Text'
+    import { P } from '~/components/atoms/Text/Text'
 
     const NavItem = ({ linkWrapper, link }) => {
         const Link = linkWrapper || Fragment
