@@ -1,12 +1,10 @@
 import styles from './HomeTemplate.module.css'
-import { Button } from '~/components/atoms/Button/Button'
-import InputGroup from '~/components/molecules/Input/InputGroup/InputGroup'
+import Organism from '~/components/organisms/Organism'
 
 const HomeTemplate = () => {
 	return (
 		<div className={styles.container}>
-			<Button>HI</Button>
-			<InputGroup />
+			<Organism reverse />
 		</div>
 	)
 }
