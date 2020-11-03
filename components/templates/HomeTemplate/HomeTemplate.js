@@ -4,7 +4,7 @@ import Organism from '~/components/organisms/Organism'
 const HomeTemplate = () => {
 	return (
 		<div className={styles.container}>
-			<Organism reverse />
+			<Organism />
 		</div>
 	)
 }
