@@ -3,5 +3,5 @@ import { Atom } from './'
 
 storiesOf('Atom', module)
     .add('default', () => (
-        <Atom>Test</Atom>
+        <Atom></Atom>
     ))

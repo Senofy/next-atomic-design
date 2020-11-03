@@ -1,13 +1,16 @@
 import { Fragment } from 'react';
 import Head from 'next/head'
 import PageTemplate from '~/components/templates/PageTemplate'
+import Header from '~/components/organisms/Header';
 import { connect } from 'react-redux'
 
 const Home = () => {
 	return (
         <Fragment>
 			<Head />
-			<PageTemplate>
+			<PageTemplate 
+				header = {<Header />}
+			>
 				content
 			</PageTemplate>
 		</Fragment>

@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
-import Header from './'
+import { Img } from './'
 
-storiesOf('Header', module)
+storiesOf('Atom', module)
     .add('default', () => (
-        <Header>Test</Header>
+        <Img>Test</Img>
     ))
