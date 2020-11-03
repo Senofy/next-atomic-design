@@ -1,14 +1,15 @@
 import { Fragment } from 'react';
-import styles from './index.module.css'
 import Head from 'next/head'
-import HomeTemplate from '~/components/templates/HomeTemplate/HomeTemplate'
+import PageTemplate from '~/components/templates/PageTemplate'
 import { connect } from 'react-redux'
 
 const Home = () => {
 	return (
         <Fragment>
 			<Head />
-			<HomeTemplate />
+			<PageTemplate>
+				content
+			</PageTemplate>
 		</Fragment>
     );
 }
