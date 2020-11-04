@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme'
-import { Atom } from './'
+import { P } from './'
 
-const wrap = (props = {}) => shallow(<Atom {...props} />)
+const wrap = (props = {}) => shallow(<P {...props} />)
 
 it('renders children when passed in', () => {
   const wrapper = wrap({ children: 'test' })
