@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types'
-import { Img } from '~/components/atoms/Image'
 import { FooterLink } from '~/components/atoms/Link'
 import { P } from '~/components/atoms/Text'
 import { Wrapper, LinkWrapper } from './styles'
