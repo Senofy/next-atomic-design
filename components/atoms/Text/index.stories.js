@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
-import { Atom } from './'
+import { P } from './'
 
 storiesOf('Atom', module)
     .add('default', () => (
-        <Atom></Atom>
+        <P></P>
     ))

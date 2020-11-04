@@ -2,11 +2,13 @@ import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 import { font, palette } from 'styled-theme'
 
+const color = ({ color, colorWeight }) => palette(color || 'grayscale', colorWeight || 5)
+
 export const P = styled.p`
     font-family: ${font('primary')};
     font-size: ${({ fontSize }) => `${fontSize}px` || '12px'};
     line-height: ${({ lineHeight }) => lineHeight};
-    color: ${palette('grayscale', 9)};
+    color: ${color};
 `
 
 P.propTypes = {
