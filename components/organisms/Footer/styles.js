@@ -2,13 +2,15 @@ import styled from 'styled-components'
 import { font, palette } from 'styled-theme'
 
 export const Wrapper = styled.div`
-    background-color: white;
+    background-color: #fafbfc;
+    border-top: 1px solid rgba(72, 94, 144, 0.16);
 
-    height: 60px;
+    padding: 15px 25px;
     width: 100%;
-    border-bottom: 1px solid rgba(72, 94, 144, 0.16);
+
     padding: 0 20px;
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 
     @media screen and (min-width: 992px) {
@@ -24,8 +26,4 @@ export const LinkWrapper = styled.div`
     & > :not(:first-child) {
         margin-left: 30px;
     }
-`
-
-export const ExtraWrapper = styled.div`
-    justify-self: end;
 `

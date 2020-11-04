@@ -13,3 +13,14 @@ export const NavLink = styled.a`
         color: ${palette('primary', 0)};
     }
 `
+
+export const FooterLink = styled.a`
+    font-family: ${font('primary')};
+    font-size: 12px;
+    line-height: 1.5;
+    transition: all 0.2s ease-in-out;
+    
+    &:hover {
+        color: ${palette('primary', 0)};
+    }
+`

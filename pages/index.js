@@ -1,7 +1,8 @@
 import { Fragment } from 'react';
 import Head from 'next/head'
 import PageTemplate from '~/components/templates/PageTemplate'
-import Header from '~/components/organisms/Header';
+import Header from '~/components/organisms/Header'
+import Footer from '~/components/organisms/Footer'
 import { connect } from 'react-redux'
 
 const Home = () => {
@@ -10,8 +11,9 @@ const Home = () => {
 			<Head />
 			<PageTemplate 
 				header = {<Header />}
+				footer = {<Footer />}
 			>
-				content
+				
 			</PageTemplate>
 		</Fragment>
     );
