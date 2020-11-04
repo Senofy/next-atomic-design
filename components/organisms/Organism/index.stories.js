@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
-import Header from './'
+import Organism from './'
 
-storiesOf('Header', module)
+storiesOf('Organism', module)
     .add('default', () => (
-        <Header>Test</Header>
+        <Organism>Test</Organism>
     ))

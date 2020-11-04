@@ -1,4 +1,5 @@
 import { Fragment, useState, useEffect } from 'react';
+import "./_app.css";
 import GlobalStyle from '../globalStyles'
 import { wrapper } from '../store'
 
