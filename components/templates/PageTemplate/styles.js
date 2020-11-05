@@ -9,22 +9,54 @@ export const Wrapper = styled.div`
 	box-sizing: border-box;
 `
 
-export const Header = styled.header`
+export const Navigation = styled.nav`
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 999;
 `
 
-export const Hero = styled.section``
+export const Header = styled.header`
+	align-self: center;
 
-export const Sponsor = styled.section``
+	display: flex;
+	justify-content: space-between;
+
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 20px;
+
+	@media screen and (min-width: 768px) {
+		max-width: ${size('maxWidthTablet')};
+	}
+
+	@media screen and (min-width: 992px) {
+		max-width: ${size('maxWidthDesktop')};
+	}
+
+	@media screen and (min-width: 1200px) {
+		max-width: ${size('maxWidthDesktopWide')};
+	}
+`
 
 export const Content = styled.section`
     width: 100%;
-    box-sizing: border-box;
-    margin: 20px auto;
-    max-width: ${size('maxWidth')};
+
+	padding: 0 20px;
+	
+	@media screen and (min-width: 768px) {
+		padding: 0 20px;
+		margin: 0 auto;
+		max-width: ${size('maxWidthTablet')};
+	}
+
+	@media screen and (min-width: 992px) {
+		max-width: ${size('maxWidthDesktop')};
+	}
+
+	@media screen and (min-width: 1200px) {
+		max-width: ${size('maxWidthDesktopWide')};
+	}
 `
 
 export const Footer = styled.footer`

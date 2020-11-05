@@ -53,6 +53,11 @@
   dependencies:
     cross-fetch "3.0.5"
 
+"@atomic-layout/core@^0.14.1":
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/@atomic-layout/core/-/core-0.14.1.tgz#3d69be5f79775f11b8008f18bc603b04a2141ccd"
+  integrity sha512-o5nhk/1djuKzB20C2LSOuetTDytsbGg4c0UfxXkq1pqoaN3hKJcHPYF9nV+p6+P5CWqNBaaJddZ32OsFSppULQ==
+
 "@babel/code-frame@7.10.4", "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.5.5", "@babel/code-frame@^7.8.3":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.10.4.tgz#168da1a36e90da68ae8d49c0f1b48c7c6249213a"
@@ -3268,6 +3273,13 @@ atob@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
+
+atomic-layout@^0.16.2:
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/atomic-layout/-/atomic-layout-0.16.2.tgz#029f32a226a18ba42e360e4b7705a95209aa79f9"
+  integrity sha512-jtFHSg9o8baLqAhwdsi/mxoo65pJWSmdsSlrzXl6zSfAnYL3dM/1OwZ+w1oV/YGqTacfqhxMqNfkmbRE/wU3tg==
+  dependencies:
+    "@atomic-layout/core" "^0.14.1"
 
 autoprefixer@^9.7.2, autoprefixer@^9.8.6:
   version "9.8.6"

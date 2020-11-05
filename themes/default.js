@@ -32,13 +32,16 @@ theme.palette = {
 theme.reversePalette = reversePalette(theme.palette)
 
 theme.fonts = {
-    primary: '"IBM Plex Sans", sans-serif',
+    primary: 'IBM Plex Sans, sans-serif',
     pre: 'Inter, sans-serif',
-    quote: '"IBM Plex Sans", sans-serif',
+    quote: 'IBM Plex Sans, sans-serif',
 }
 
 theme.sizes = {
-    maxWidth: '1140px',
+    // mobile is 100%
+    maxWidthTablet: '720px', // 768px
+    maxWidthDesktop: '960px', // 992px
+    maxWidthDesktopWide: '1140px', // 1200px
 }
 
 export default theme

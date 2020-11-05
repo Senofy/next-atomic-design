@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme'
-import Header from './'
+import NavBar from './'
 
-const wrap = (props = {}) => shallow(<Header {...props} />)
+const wrap = (props = {}) => shallow(<NavBar {...props} />)
 
 it('renders props when passed in', () => {
   const wrapper = wrap({ id: 'foo' })

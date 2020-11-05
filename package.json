@@ -21,6 +21,7 @@
 		]
 	},
 	"dependencies": {
+		"atomic-layout": "^0.16.2",
 		"axios": "^0.20.0",
 		"next": "^10.0.0",
 		"next-compose": "^0.0.2",
