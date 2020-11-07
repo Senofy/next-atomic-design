@@ -1,9 +1,8 @@
-import styled from 'styled-components';
-import { maxWidth } from 'styled-system';
-
+import styled from 'styled-components'
+import { maxWidth } from 'styled-system'
 
 interface MaxWidthProp {
-  maxWidth: [string, string, number, number, number];
+	maxWidth: [string, string, number, number, number]
 }
 
 export const Wrapper = styled.div`
@@ -33,9 +32,9 @@ export const Header = styled.header<MaxWidthProp>`
 `
 
 export const Content = styled.section<MaxWidthProp>`
-  width: 100%;
+	width: 100%;
 	padding: 0 20px;
-	
+
 	@media screen and (min-width: 768px) {
 		padding: 0 20px;
 		margin: 0 auto;
@@ -44,5 +43,5 @@ export const Content = styled.section<MaxWidthProp>`
 `
 
 export const Footer = styled.footer`
-  margin-top: auto;
+	margin-top: auto;
 `

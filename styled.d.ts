@@ -1,21 +1,19 @@
-import 'styled-components';
-
+import 'styled-components'
 
 interface Fonts {
-  body: string;
-  heading: string;
+	body: string
+	heading: string
 }
 
 interface Colors {
-  [index: string]: string
+	[index: string]: string
 }
 
-
 declare module 'styled-components' {
-  export interface DefaultTheme {
-    breakpoints: string[];
-    colors: Colors;
-    fonts: Fonts;
-    fontSizes: number[];
-  }
+	export interface DefaultTheme {
+		breakpoints: string[]
+		colors: Colors
+		fonts: Fonts
+		fontSizes: number[]
+	}
 }

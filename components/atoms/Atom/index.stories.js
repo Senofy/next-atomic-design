@@ -1,7 +1,4 @@
 import { storiesOf } from '@storybook/react'
 import { Atom } from './'
 
-storiesOf('Atom', module)
-    .add('default', () => (
-        <Atom></Atom>
-    ))
+storiesOf('Atom', module).add('default', () => <Atom></Atom>)

@@ -1,21 +1,18 @@
 import styled from 'styled-components'
-import {
-  color, fontFamily, fontSize, fontWeight, lineHeight, padding
-} from 'styled-system';
-
+import { color, fontFamily, fontSize, fontWeight, lineHeight, padding } from 'styled-system'
 
 export interface ButtonProps {
-  fontWeight?: number;
-  padding?: number;
+	fontWeight?: number
+	padding?: number
 }
 
 export const Button = styled.button<ButtonProps>`
-    ${color};
-    ${fontFamily};
-    ${fontSize};
-    ${fontWeight};
-    ${lineHeight};
-    ${padding};
-    border-radius: 0.25rem;
-    background-color: blue
-`;
+	${color};
+	${fontFamily};
+	${fontSize};
+	${fontWeight};
+	${lineHeight};
+	${padding};
+	border-radius: 0.25rem;
+	background-color: blue;
+`
