@@ -1,33 +1,21 @@
 import 'styled-components';
 
 
-interface Palette {
-  primary: string[];
-  secondary: string[];
-  danger: string[];
-  alert: string[];
-  success: string[];
-  white: string[];
-  grayscale: string[];
-}
-
 interface Fonts {
-  primary: string;
-  pre: string;
-  quote: string;
+  body: string;
+  heading: string;
 }
 
-interface Sizes {
-  maxWidthTablet: string;
-  maxWidthDesktop: string;
-  maxWidthDesktopWide: string;
+interface Colors {
+  [index: string]: string
 }
+
 
 declare module 'styled-components' {
   export interface DefaultTheme {
-    palette: Palette;
-    sizes: Sizes;
+    breakpoints: string[];
+    colors: Colors;
     fonts: Fonts;
-    reversePalette: Palette;
+    fontSizes: number[];
   }
 }
