@@ -1,57 +1,50 @@
-// https://github.com/diegohaz/arc/wiki/Styling
 import { DefaultTheme } from 'styled-components';
-import { reversePalette } from 'styled-theme/composer';
 
-
-const palette: DefaultTheme['palette'] =  {
-  primary: [
-    '#0168FA'
-  ],
-  secondary: [
-    '#7987A1'
-  ],
-  danger: [
-    '#DC3545'
-  ],
-  alert: ['#ffa000', '#ffc107', '#ffd761', '#ffecb3'],
-  success: ['#388e3c', '#4caf50', '#7cc47f', '#c8e6c9'],
-  white: [
-    '#fff',
-    'rgba(255, 255, 255, 0.2)',
-    'rgba(255, 255, 255, 0.3)',
-    'rgba(255, 255, 255, 0.4)',
-    'rgba(255, 255, 255, 0.5)',
-    'rgba(255, 255, 255, 0.6)',
-    'rgba(255, 255, 255, 0.7)',
-    'rgba(255, 255, 255, 0.8)'
-  ],
-  grayscale: [
-    '#f4f5f8',
-    '#e3e7ed',
-    '#cdd4e0',
-    '#b4bdce',
-    '#97a3b9',
-    '#7987a1',
-    '#596882',
-    '#3b4863',
-    '#1c273c',
-  ],
-}
-
-const defaultTheme: DefaultTheme = {
-  palette,
-  reversePalette: reversePalette(palette),
+const theme: DefaultTheme =  {
+  breakpoints: ['576px', '768px', '992px', '1200px', '1920px'],
   fonts: {
-    primary: 'IBM Plex Sans, sans-serif',
-    pre: 'Inter, sans-serif',
-    quote: 'IBM Plex Sans, sans-serif',
+      body: 'Inter, sans-serif',
+      heading: 'Poppins, sans-serif'
   },
-  sizes: {
-    // mobile is 100%
-    maxWidthTablet: '720px', // 768px
-    maxWidthDesktop: '960px', // 992px
-    maxWidthDesktopWide: '1140px', // 1200px
-  }
+  fontSizes: [12, 14, 16, 20, 24, 30, 36, 48, 60, 72],
+  colors: {
+      'green-100': '#E9F6EE',
+      'green-200': '#C2E6CF',
+      'green-300': '#9AD5AF',
+      'green-400': '#6FC48E',
+      'green-500': '#44AF69',
+      'green-600': '#319D54',
+      'green-700': '#1C8741',
+      'green-800': '#0B7A32',
+      'green-900': '#006224',
+      'red-100': '#F7E1E6',
+      'red-200': '#EFB6BF',
+      'red-300': '#E68894',
+      'red-400': '#DF5867',
+      'red-500': '#D62839',
+      'red-600': '#C51725',
+      'red-700': '#B2000D',
+      'red-800': '#9B0003',
+      'red-900': '#750200',
+      'blue-100': '#E5F1FA',
+      'blue-200': '#BED7FA',
+      'blue-300': '#93B8F9',
+      'blue-400': '#6596FB',
+      'blue-500': '#3772FF',
+      'blue-600': '#215AF0',
+      'blue-700': '#0237E1',
+      'blue-800': '#001FCE',
+      'blue-900': '#0011A0',
+      'example-100': 'EXAMPLE',
+      'example-200': 'EXAMPLE',
+      'example-300': 'EXAMPLE',
+      'example-400': 'EXAMPLE',
+      'example-500': 'EXAMPLE',
+      'example-600': 'EXAMPLE',
+      'example-700': 'EXAMPLE',
+      'example-800': 'EXAMPLE',
+      'example-900': 'EXAMPLE',
+  },
 }
 
-export default defaultTheme;
+export default theme;
