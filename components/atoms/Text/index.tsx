@@ -11,7 +11,7 @@ export interface HeadingProps {
 
 export interface ParagraphProps {
   fontSize?: number;
-  lineHeight: number;
+  lineHeight?: number;
 }
 
 const headingStyles = css`
@@ -46,5 +46,6 @@ export const P = styled.p<ParagraphProps>`
 `;
 
 P.defaultProps = {
-  fontSize: 12
+  fontSize: 12,
+  lineHeight: 1.5
 }
