@@ -2,7 +2,7 @@
 
 import { configure, addDecorator } from '@storybook/react'
 import { ThemeProvider } from 'styled-components'
-import theme from '~/themes/default'
+import defaultTheme from '../style'
 
 const req = require.context('../../components', true, /.stories.js$/)
 
@@ -11,7 +11,7 @@ function loadStories() {
 }
 
 addDecorator(story => (
-    <ThemeProvider theme={theme}>{story()}</ThemeProvider>
+    <ThemeProvider theme={defaultTheme}>{story()}</ThemeProvider>
 ))
 
 configure(loadStories, module)
