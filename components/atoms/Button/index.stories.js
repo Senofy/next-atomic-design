@@ -1,4 +1,4 @@
 import { storiesOf } from '@storybook/react'
-import { P } from './'
+import { Button } from './'
 
-storiesOf('Atom', module).add('default', () => <P></P>)
+storiesOf('Button', module).add('default', () => <Button></Button>)
