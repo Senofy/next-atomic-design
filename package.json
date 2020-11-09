@@ -5,8 +5,8 @@
 		"build": "next build",
 		"start": "next start",
 		"test": "jest --watch",
-		"storybook": "start-storybook -p 6006 -p public -c private/storybook --no-dll",
-		"build-storybook": "build-storybook -p public -c private/storybook --no-dll"
+		"storybook": "start-storybook -p 6006 -s public -c private/storybook --no-dll",
+		"build-storybook": "build-storybook -s public -c private/storybook --no-dll"
 	},
 	"jest": {
 		"moduleDirectories": [
