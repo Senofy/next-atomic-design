@@ -1,15 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
-	@font-face {
-		font-family: 'Inter';
-		src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700');
-	}
-
-	@font-face {
-		font-family: 'Poppins';
-		src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-	}
+	@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
 
 	* {
 		box-sizing: border-box;
