@@ -8,9 +8,7 @@ const Home = () => {
 	return (
 		<Fragment>
 			<Head title={'Home'} />
-			<PageTemplate navigation={<NavigationBar />} footer={<Footer />}>
-				
-			</PageTemplate>
+			<PageTemplate navigation={<NavigationBar />} footer={<Footer />}></PageTemplate>
 		</Fragment>
 	)
 }
