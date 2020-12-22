@@ -1,1 +1,3 @@
-export { default as Molecule } from './Molecule';
+export { default as Footer } from './Footer'
+
+export { default as Molecule } from './Molecule'

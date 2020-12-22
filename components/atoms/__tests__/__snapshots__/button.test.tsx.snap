@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button> should render without error 1`] = `
+<DocumentFragment>
+  <button
+    class="Button-sc-1s4wg5s-0 gvwdPA"
+    color="white"
+    font-family="body"
+    font-size="14"
+  >
+    CLick Me
+  </button>
+</DocumentFragment>
+`;

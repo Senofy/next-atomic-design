@@ -14,6 +14,5 @@ declare module 'styled-components' {
 		breakpoints: string[]
 		colors: Colors
 		fonts: Fonts
-		fontSizes: number[]
 	}
 }

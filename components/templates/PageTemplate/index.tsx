@@ -1,19 +1,18 @@
-import { FC, ReactNode } from 'react'
-import { Wrapper, Navigation, Header, Content, Footer } from './styles'
+import React, { FC, ReactNode } from 'react'
+
+import { Wrapper, Navigation, Content, Footer } from './styles'
 
 interface PageTemplateProps {
 	navigation: ReactNode
-	header: ReactNode
 	footer: ReactNode
 }
 
-const PageTemplate: FC<PageTemplateProps> = ({ navigation, header, footer, children }) => {
+const PageTemplate: FC<PageTemplateProps> = ({ navigation, footer, children }) => {
 	return (
 		<Wrapper>
 			<Navigation>{navigation}</Navigation>
-			<Header maxWidth={['100%', '100%', 720, 960, 1140]}>{header}</Header>
-			<Content maxWidth={['100%', '100%', 720, 960, 1140]}>{children}</Content>
-			<Footer>{footer}</Footer>
+			<Content>{children}</Content>
+			{footer && <Footer>{footer}</Footer>}
 		</Wrapper>
 	)
 }

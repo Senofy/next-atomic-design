@@ -1,0 +1,12 @@
+# Exempt from Eslint rules
+next.config.js
+jest.config.js
+
+# Story setup files
+private/
+
+# Story files
+*.stories.js
+
+# Generated Graphql Schema types
+graphql/generated.tsx

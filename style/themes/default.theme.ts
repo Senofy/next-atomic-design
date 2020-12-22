@@ -3,10 +3,9 @@ import { DefaultTheme } from 'styled-components'
 const theme: DefaultTheme = {
 	breakpoints: ['576px', '768px', '992px', '1200px', '1920px'],
 	fonts: {
-		body: 'Inter, sans-serif',
-		heading: 'Poppins, sans-serif',
+		body: 'Helvetica, Arial, sans-serif',
+		heading: 'Porter Bold, sans-serif',
 	},
-	fontSizes: [12, 14, 16, 20, 24, 30, 36, 48, 60, 72],
 	colors: {
 		'green-100': '#E9F6EE',
 		'green-200': '#C2E6CF',
@@ -35,6 +34,15 @@ const theme: DefaultTheme = {
 		'blue-700': '#0237E1',
 		'blue-800': '#001FCE',
 		'blue-900': '#0011A0',
+		'dark-100': '#F3F4F4',
+		'dark-200': '#DADBDD',
+		'dark-300': '#BEC1C3',
+		'dark-400': '#A2A5AA',
+		'dark-500': '#82868C',
+		'dark-600': '#6C7076',
+		'dark-700': '#54575E',
+		'dark-800': '#42464C',
+		'dark-900': '#2E323A',
 		'example-100': 'EXAMPLE',
 		'example-200': 'EXAMPLE',
 		'example-300': 'EXAMPLE',

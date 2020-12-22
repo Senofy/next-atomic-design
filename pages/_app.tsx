@@ -1,28 +1,31 @@
-import { useEffect, useState } from 'react';
-import { AppProps } from 'next/app';
-import { Provider } from 'react-redux';
-import { ThemeProvider } from 'styled-components';
+import { useEffect, useState } from 'react'
+import { AppProps } from 'next/app'
+import { ThemeProvider } from 'styled-components'
+import { ToastProvider } from 'react-toast-notifications'
+import { QueryClient, QueryClientProvider } from 'react-query'
 
-import "./_app.css";
-import store from '../store';
-import { GlobalStyle, theme } from '../style';
+import { GlobalStyle, theme } from '../style'
+import { AuthContextProvider } from '@context'
 
+const queryClient = new QueryClient()
 
 const App = ({ Component, pageProps }: AppProps) => {
-  const [isMounted, setIsMounted] = useState(false)
+	const [isMounted, setIsMounted] = useState(false)
 
-  useEffect(() => {
-    setIsMounted(true)
-  }, [])
+	useEffect(() => {
+		setIsMounted(true)
+	}, [])
 
-  return (
-    <Provider store={store}>
-      <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        {isMounted && <Component {...pageProps} />}
-      </ThemeProvider>
-    </Provider>
-  );
+	return (
+		<ToastProvider autoDismiss autoDismissTimeout={2000}>
+			<QueryClientProvider client={queryClient}>
+				<AuthContextProvider>
+					<GlobalStyle />
+					<ThemeProvider theme={theme}>{isMounted && <Component {...pageProps} />}</ThemeProvider>
+				</AuthContextProvider>
+			</QueryClientProvider>
+		</ToastProvider>
+	)
 }
 
-export default App;
+export default App
